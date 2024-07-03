@@ -1,0 +1,286 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"28 C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+[v _USARTInit USARTInit `(v  1 e 1 0 ]
+"61
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"69
+[v _Test Test `(v  1 e 1 0 ]
+"83
+[v _USARTWriteChar USARTWriteChar `(v  1 e 1 0 ]
+"90
+[v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
+"111
+[v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
+"119
+[v _main main `(v  1 e 1 0 ]
+"160 C:\Program Files (x86)\Microchip\xc8\v1.38\include\pic16f887.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S176 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"177
+[u S185 . 1 `S176 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES185  1 e 1 @5 ]
+"221
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"343
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"447
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S141 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"470
+[s S150 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S155 . 1 `S141 1 . 1 0 `S150 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES155  1 e 1 @11 ]
+[s S203 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"540
+[u S211 . 1 `S203 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES211  1 e 1 @12 ]
+[s S248 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ULPWUIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"596
+[u S257 . 1 `S248 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES257  1 e 1 @13 ]
+[s S57 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"1041
+[s S66 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S70 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S73 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S76 . 1 `S57 1 . 1 0 `S66 1 . 1 0 `S70 1 . 1 0 `S73 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES76  1 e 1 @24 ]
+"1105
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1111
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1379
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1440
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1562
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S122 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1676
+[u S130 . 1 `S122 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES130  1 e 1 @140 ]
+[s S269 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1837
+[s S275 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S280 . 1 `S269 1 . 1 0 `S275 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES280  1 e 1 @143 ]
+[s S20 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2527
+[s S29 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S33 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S36 . 1 `S20 1 . 1 0 `S29 1 . 1 0 `S33 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES36  1 e 1 @152 ]
+"2586
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"3178
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"3189
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S101 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3280
+[u S110 . 1 `S101 1 . 1 0 ]
+[v _BAUDCTLbits BAUDCTLbits `VES110  1 e 1 @391 ]
+[s S225 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3439
+[u S232 . 1 `S225 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES232  1 e 1 @396 ]
+"3468
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"3706
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"3892
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"38 C:\Users\Mecatronica\MPLABXProjects\123.X\lib_usart_pic16_v1.0/usart_pic16.h
+[v _URBuff URBuff `VE[64]uc  1 e 64 0 ]
+"39
+[v _UQFront UQFront `VEc  1 e 1 0 ]
+"40
+[v _UQEnd UQEnd `VEc  1 e 1 0 ]
+"119 C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"194
+[v main@k k `i  1 a 2 23 ]
+"175
+[v main@j j `i  1 a 2 16 ]
+"161
+[v main@v1 v1 `i  1 a 2 20 ]
+"162
+[v main@y y `uc  1 a 1 22 ]
+"160
+[v main@addresW1 addresW1 `uc  1 a 1 13 ]
+"159
+[v main@addresW addresW `uc  1 a 1 12 ]
+"218
+[v main@w w `i  1 a 2 25 ]
+"210
+[v main@u u `i  1 a 2 18 ]
+"140
+[v main@i i `i  1 a 2 27 ]
+"139
+[v main@va va `i  1 a 2 10 ]
+"136
+[v main@va2 va2 `i  1 a 2 8 ]
+"129
+[v main@pwd pwd `[6]uc  1 a 6 0 ]
+"130
+[v main@cont cont `i  1 a 2 14 ]
+"131
+[v main@cont1 cont1 `i  1 a 2 6 ]
+"128
+[v main@F1709 F1709 `[6]uc  1 s 6 F1709 ]
+"228
+} 0
+"90
+[v _writeEEPROM writeEEPROM `(v  1 e 1 0 ]
+{
+[v writeEEPROM@address address `uc  1 a 1 wreg ]
+"92
+[v writeEEPROM@INTCON_SAVE INTCON_SAVE `uc  1 a 1 3 ]
+"90
+[v writeEEPROM@address address `uc  1 a 1 wreg ]
+[v writeEEPROM@datas datas `uc  1 p 1 0 ]
+"93
+[v writeEEPROM@address address `uc  1 a 1 2 ]
+"109
+} 0
+"111
+[v _readEEPROM readEEPROM `(uc  1 e 1 0 ]
+{
+[v readEEPROM@address address `uc  1 a 1 wreg ]
+[v readEEPROM@address address `uc  1 a 1 wreg ]
+"113
+[v readEEPROM@address address `uc  1 a 1 0 ]
+"117
+} 0
+"83
+[v _USARTWriteChar USARTWriteChar `(v  1 e 1 0 ]
+{
+[v USARTWriteChar@ch ch `uc  1 a 1 wreg ]
+[v USARTWriteChar@ch ch `uc  1 a 1 wreg ]
+[v USARTWriteChar@ch ch `uc  1 a 1 0 ]
+"88
+} 0
+"28
+[v _USARTInit USARTInit `(v  1 e 1 0 ]
+{
+[v USARTInit@baud_rate baud_rate `ui  1 p 2 0 ]
+"59
+} 0
+"61
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"67
+} 0
+"69
+[v _Test Test `(v  1 e 1 0 ]
+{
+"71
+[v Test@d d `i  1 a 2 3 ]
+"80
+} 0

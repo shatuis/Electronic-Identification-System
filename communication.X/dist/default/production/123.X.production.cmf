@@ -1,0 +1,521 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\123.X.production.obj
+cinit CODE 0 7CF 7CF 31 2
+text1 CODE 0 516 516 20 2
+text2 CODE 0 509 509 D 2
+text3 CODE 0 4EC 4EC 8 2
+text4 CODE 0 536 536 2A 2
+text5 CODE 0 4FC 4FC D 2
+text6 CODE 0 560 560 2E 2
+maintext CODE 0 58E 58E 241 2
+cstackCOMMON COMMON 1 70 70 8 1
+cstackBANK0 BANK0 1 20 20 1D 1
+bssBANK1 BANK1 1 A0 A0 40 1
+idataBANK0 CODE 0 4E6 4E6 6 2
+dataBANK0 BANK0 1 3D 3D 6 1
+clrtext CODE 0 4F4 4F4 8 2
+bssCOMMON COMMON 1 78 78 2 1
+$C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 43-6F 1
+RAM E0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 43-6F 1
+BANK1 E0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-4E5 2
+CONST 800-1FFF 2
+ENTRY 3-4E5 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-4E5 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-4E5 2
+STRCODE 800-1FFF 2
+STRING 3-4E5 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\123.X.production.obj
+7CF cinit CODE >301:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7CF cinit CODE >304:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7CF cinit CODE >333:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7D4 cinit CODE >334:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7D5 cinit CODE >335:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7DA cinit CODE >336:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7DB cinit CODE >337:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7E0 cinit CODE >338:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7E1 cinit CODE >339:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7E6 cinit CODE >340:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7E7 cinit CODE >341:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7EC cinit CODE >342:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7ED cinit CODE >343:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F2 cinit CODE >344:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F3 cinit CODE >363:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F4 cinit CODE >364:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F5 cinit CODE >365:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F6 cinit CODE >366:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7F7 cinit CODE >367:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7FA cinit CODE >370:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7FB cinit CODE >371:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7FC cinit CODE >377:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7FC cinit CODE >379:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+7FD cinit CODE >380:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+560 text6 CODE >69:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+560 text6 CODE >71:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+562 text6 CODE >72:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+567 text6 CODE >74:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+56A text6 CODE >75:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+577 text6 CODE >76:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+57A text6 CODE >77:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+587 text6 CODE >78:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+58D text6 CODE >72:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4FC text5 CODE >61:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4FC text5 CODE >63:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4FF text5 CODE >64:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+502 text5 CODE >65:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+505 text5 CODE >66:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+536 text4 CODE >28:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+536 text4 CODE >31:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+53B text4 CODE >34:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+53C text4 CODE >37:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+540 text4 CODE >39:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+541 text4 CODE >34:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+54B text4 CODE >39:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+54B text4 CODE >41:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+54E text4 CODE >42:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+54F text4 CODE >43:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+550 text4 CODE >44:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+551 text4 CODE >47:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+554 text4 CODE >48:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+555 text4 CODE >49:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+556 text4 CODE >50:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+557 text4 CODE >52:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+55A text4 CODE >55:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+55D text4 CODE >56:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+55E text4 CODE >58:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+55F text4 CODE >59:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4EC text3 CODE >83:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4ED text3 CODE >85:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4F1 text3 CODE >87:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4F3 text3 CODE >88:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+509 text2 CODE >111:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+50A text2 CODE >113:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+50E text2 CODE >114:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+511 text2 CODE >115:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+512 text2 CODE >116:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+516 text1 CODE >90:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+517 text1 CODE >93:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+51B text1 CODE >94:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+51D text1 CODE >95:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+520 text1 CODE >96:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+521 text1 CODE >97:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+525 text1 CODE >98:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+526 text1 CODE >99:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+528 text1 CODE >100:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+52A text1 CODE >101:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+52B text1 CODE >102:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+52D text1 CODE >103:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+52E text1 CODE >104:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+52E text1 CODE >107:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+532 text1 CODE >106:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+533 text1 CODE >104:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+534 text1 CODE >108:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+535 text1 CODE >109:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+58E maintext CODE >119:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+58E maintext CODE >120:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+592 maintext CODE >121:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+593 maintext CODE >122:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+594 maintext CODE >123:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+597 maintext CODE >124:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+598 maintext CODE >125:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+59B maintext CODE >126:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+59E maintext CODE >127:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5A3 maintext CODE >128:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5AC maintext CODE >129:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5C2 maintext CODE >130:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5C4 maintext CODE >131:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5C6 maintext CODE >134:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5CF maintext CODE >136:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5D3 maintext CODE >137:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5D7 maintext CODE >139:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5D9 maintext CODE >140:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5DB maintext CODE >141:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5E6 maintext CODE >142:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5E6 maintext CODE >143:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5E9 maintext CODE >144:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5F6 maintext CODE >145:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+5F9 maintext CODE >146:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+605 maintext CODE >148:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+60D maintext CODE >149:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+60E maintext CODE >152:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+614 maintext CODE >153:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+61A maintext CODE >141:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+62D maintext CODE >156:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+634 maintext CODE >158:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+63A maintext CODE >159:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+63D maintext CODE >160:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+641 maintext CODE >161:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+643 maintext CODE >162:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+644 maintext CODE >163:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+64A maintext CODE >165:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+654 maintext CODE >166:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+65E maintext CODE >168:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+664 maintext CODE >169:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+66A maintext CODE >170:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+672 maintext CODE >172:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+678 maintext CODE >163:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+679 maintext CODE >175:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+687 maintext CODE >177:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+694 maintext CODE >178:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+697 maintext CODE >179:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6A4 maintext CODE >180:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6A7 maintext CODE >175:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6AE maintext CODE >182:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6B2 maintext CODE >183:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6B8 maintext CODE >185:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6C2 maintext CODE >186:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6CC maintext CODE >187:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6D2 maintext CODE >188:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6D8 maintext CODE >189:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6E0 maintext CODE >191:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6E6 maintext CODE >183:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6E7 maintext CODE >194:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+6F6 maintext CODE >196:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+703 maintext CODE >197:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+706 maintext CODE >198:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+713 maintext CODE >199:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+716 maintext CODE >194:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+727 maintext CODE >201:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+72D maintext CODE >137:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+72E maintext CODE >204:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+738 maintext CODE >205:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+744 maintext CODE >206:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+744 maintext CODE >207:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+74A maintext CODE >208:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+752 maintext CODE >210:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+76A maintext CODE >212:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+777 maintext CODE >213:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+77A maintext CODE >214:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+787 maintext CODE >215:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+78A maintext CODE >210:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+791 maintext CODE >217:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+797 maintext CODE >218:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+7A8 maintext CODE >220:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+7B5 maintext CODE >221:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+7B8 maintext CODE >222:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+7C5 maintext CODE >223:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+7C8 maintext CODE >218:C:\Users\Mecatronica\MPLABXProjects\123.X\newmain.c
+4F4 clrtext CODE >350:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F4 clrtext CODE >351:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F5 clrtext CODE >352:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F5 clrtext CODE >353:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F6 clrtext CODE >354:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F7 clrtext CODE >355:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F8 clrtext CODE >356:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4F9 clrtext CODE >357:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4FA clrtext CODE >358:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+4FB clrtext CODE >359:C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\123.X.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2009 0 ABS 0 - -
+__Hspace_1 E0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\123.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\123.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\123.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\123.X.production.obj
+main@i 3B 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@j 30 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@k 37 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@u 32 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@w 39 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@y 36 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_RCIF 65 0 ABS 0 - dist/default/production\123.X.production.obj
+_Test AC0 0 CODE 0 text6 dist/default/production\123.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+_main B1C 0 CODE 0 maintext dist/default/production\123.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+start 0 0 CODE 0 init C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+ttemp 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+__size_of_Test 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__size_of_USARTWriteChar 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+ttemp0 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\123.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\123.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\123.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\123.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+intlevel1 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+intlevel2 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+intlevel3 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+intlevel4 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+intlevel5 0 0 CODE 0 functab C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\123.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\123.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+_writeEEPROM A2C 0 CODE 0 text1 dist/default/production\123.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_EECON1bits 18C 0 ABS 0 - dist/default/production\123.X.production.obj
+_EECON2 18D 0 ABS 0 - dist/default/production\123.X.production.obj
+_EEDATA 10C 0 ABS 0 - dist/default/production\123.X.production.obj
+main@pwd 20 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@va2 28 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_USARTInit AC0 0 CODE 0 text4 dist/default/production\123.X.production.obj
+__size_of_USARTInit 0 0 ABS 0 - dist/default/production\123.X.production.obj
+_INTCON B 0 ABS 0 - dist/default/production\123.X.production.obj
+_BAUDCTLbits 187 0 ABS 0 - dist/default/production\123.X.production.obj
+_USARTInit A6C 0 CODE 0 text4 dist/default/production\123.X.production.obj
+start_initialization F9E 0 CODE 0 cinit dist/default/production\123.X.production.obj
+clear_ram0 9E8 0 CODE 0 clrtext dist/default/production\123.X.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+_URBuff A0 0 BANK1 1 bssBANK1 dist/default/production\123.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+_readEEPROM A12 0 CODE 0 text2 dist/default/production\123.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit F9E 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+writeEEPROM@address 72 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+USARTWriteChar@ch 70 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+_PORTAbits 5 0 ABS 0 - dist/default/production\123.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\123.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+_UQFront 79 0 COMMON 1 bssCOMMON dist/default/production\123.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/default/production\123.X.production.obj
+__S0 2009 0 ABS 0 - -
+__S1 E0 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__CFG_BOR4V$BOR40V 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__CFG_FOSC$INTRC_NOCLKOUT 0 0 ABS 0 - dist/default/production\123.X.production.obj
+_USARTWriteChar 9D8 0 CODE 0 text3 dist/default/production\123.X.production.obj
+__end_of_readEEPROM A2C 0 CODE 0 text2 dist/default/production\123.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__end_of_writeEEPROM A6C 0 CODE 0 text1 dist/default/production\123.X.production.obj
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+readEEPROM@address 70 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+__pdataBANK0 3D 0 BANK0 1 dataBANK0 dist/default/production\123.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\123.X.production.obj
+_RCSTAbits 18 0 ABS 0 - dist/default/production\123.X.production.obj
+_PIE1bits 8C 0 ABS 0 - dist/default/production\123.X.production.obj
+main@addresW 2C 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+__pmaintext B1C 0 CODE 0 maintext dist/default/production\123.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+USARTInit@baud_rate 70 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__end_of_USARTWriteChar 9E8 0 CODE 0 text3 dist/default/production\123.X.production.obj
+main@F1709 3D 0 BANK0 1 dataBANK0 dist/default/production\123.X.production.obj
+main@cont 2E 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@cont1 26 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+stacklo 0 0 ABS 0 - C:\Users\MECATR~1\AppData\Local\Temp\s1r8s.obj
+writeEEPROM@datas 70 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+main@v1 34 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+main@va 2A 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\123.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\123.X.production.obj
+_PIR2bits D 0 ABS 0 - dist/default/production\123.X.production.obj
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\123.X.production.obj
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_UART_Read A12 0 CODE 0 text5 dist/default/production\123.X.production.obj
+__size_of_UART_Read 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__ptext1 A2C 0 CODE 0 text1 dist/default/production\123.X.production.obj
+__ptext2 A12 0 CODE 0 text2 dist/default/production\123.X.production.obj
+__ptext3 9D8 0 CODE 0 text3 dist/default/production\123.X.production.obj
+__ptext4 A6C 0 CODE 0 text4 dist/default/production\123.X.production.obj
+__ptext5 9F8 0 CODE 0 text5 dist/default/production\123.X.production.obj
+__ptext6 AC0 0 CODE 0 text6 dist/default/production\123.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_UART_Read 9F8 0 CODE 0 text5 dist/default/production\123.X.production.obj
+__size_of_writeEEPROM 0 0 ABS 0 - dist/default/production\123.X.production.obj
+Test@d 73 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\123.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__size_of_readEEPROM 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__pidataBANK0 9CC 0 CODE 0 idataBANK0 dist/default/production\123.X.production.obj
+main@addresW1 2D 0 BANK0 1 cstackBANK0 dist/default/production\123.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+_TXSTAbits 98 0 ABS 0 - dist/default/production\123.X.production.obj
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_Test B1C 0 CODE 0 text6 dist/default/production\123.X.production.obj
+__end_of_main F9E 0 CODE 0 maintext dist/default/production\123.X.production.obj
+_EEADR 10D 0 ABS 0 - dist/default/production\123.X.production.obj
+_PORTA 5 0 ABS 0 - dist/default/production\123.X.production.obj
+_PORTB 6 0 ABS 0 - dist/default/production\123.X.production.obj
+_PORTD 8 0 ABS 0 - dist/default/production\123.X.production.obj
+writeEEPROM@INTCON_SAVE 73 0 COMMON 1 cstackCOMMON dist/default/production\123.X.production.obj
+_RCREG 1A 0 ABS 0 - dist/default/production\123.X.production.obj
+_SPBRG 99 0 ABS 0 - dist/default/production\123.X.production.obj
+_TRISA 85 0 ABS 0 - dist/default/production\123.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\123.X.production.obj
+_TRISD 88 0 ABS 0 - dist/default/production\123.X.production.obj
+_TXREG 19 0 ABS 0 - dist/default/production\123.X.production.obj
+_UQEnd 78 0 COMMON 1 bssCOMMON dist/default/production\123.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization F9E 0 CODE 0 cinit dist/default/production\123.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\123.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\123.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7CF F9E 31 2
+text1 0 516 A2C 20 2
+text2 0 509 A12 D 2
+text3 0 4EC 9D8 8 2
+text4 0 536 A6C 2A 2
+text5 0 4FC 9F8 D 2
+text6 0 560 AC0 2E 2
+maintext 0 58E B1C 241 2
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 23 1
+reset_vec 0 0 0 3 2
+bssBANK1 1 A0 A0 40 1
+idataBANK0 0 4E6 9CC 6 2
+clrtext 0 4F4 9E8 8 2
+config 0 2007 400E 2 2
